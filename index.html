@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall 2025: Lattice-Based Cryptography</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 10px;
+            padding: 0;
+            line-height: 1.4;
+        }
+        section {
+            margin-bottom: 10px;
+        }
+        h1, h2 {
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+        li {
+            margin-bottom: 2px;
+        }
+        hr {
+            margin: 10px 0;
+            border: 0;
+            height: 1px;
+            background: #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 3px;
+        }
+        th {
+            background-color: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fall 2025: Lattice-Based Cryptography Seminar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Seminar Description</h2>
+        <p>Prerequisite: Linear Algebra, Abstract Algebra (including groups, rings, modules), Basic Number Theory, and basic familiarity with complexity theory and cryptography (e.g., one-way functions, public-key encryption).</p>
+        <p>
+            This seminar offers a rigorous introduction to lattice-based cryptography, one of the most promising directions in post-quantum cryptography.
+            Topics include worst-case to average-case reductions, the Learning With Errors (LWE) problem, ring/ideal variants, trapdoors, digital signatures, identity-based and functional encryption, as well as advanced constructions such as fully homomorphic encryption and zero-knowledge proofs.
+        </p>
+        <p>
+            Emphasis will be placed on both theoretical foundations and practical relevance. The course will follow a mix of lecture presentations and student-led paper discussions.
+        </p>
+        <p>
+            By the end of the seminar, students should be equipped to read cutting-edge research papers and conduct independent work in lattice-based cryptography or related fields in post-quantum cryptography.
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Seminar Information</h2>
+        <p><strong>Lecturer:</strong> Liu Jiaqi<br>
+        <strong>Lecture Time:</strong> Tuesday & Friday, 10:00 AM – 12:00 PM<br>
+        <strong>Location:</strong> Room 302, CIM building<br>
+        <br>
+        <strong>Textbook:</strong> "An Introduction to Mathematical Cryptography" by Hoffstein–Pipher–Silverman (supplemented by papers and lecture notes)</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Lectures</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Lecture</th>
+                <th>Topic</th>
+                <th>Reading Materials</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lecture 01</td>
+                <td><a href="lecture01.html">Introduction to Lattices</a></td>
+                <td>Micciancio–Goldwasser Ch. 1–2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lecture 02</td>
+                <td><a href="lecture02.html">Hard Lattice Problems</a></td>
+                <td>Lecture Notes + Slides</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lecture 03</td>
+                <td><a href="lecture03.html">Learning With Errors (LWE)</a></td>
+                <td>Regev’s Paper + Notes</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lecture 04</td>
+                <td><a href="lecture04.html">Ring-LWE and Module-LWE</a></td>
+                <td>Lyubashevsky–Peikert–Regev 2013</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lecture 05</td>
+                <td><a href="lecture05.html">Trapdoors and Applications</a></td>
+                <td>Micciancio–Peikert 2012</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Lecture 06</td>
+                <td><a href="lecture06.html">Advanced Constructions (IBFE, FHE, etc.)</a></td>
+                <td>Selected papers + notes</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Announcements</h2>
+        <ul>
+            <li>First lecture: September 3, 2025</li>
+            <li>Paper review schedule will be distributed by Week 2</li>
+            <li>Project proposal due: October 18, 2025</li>
+            <li>Final presentation week: December 10–12, 2025</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Additional Materials</h2>
+        <p>Please check the list below for useful references and let me know if you have suggestions!</p>
+        <li> Erratas and updates will be posted regularly.
+        <h3>Books</h3>
+        <ul>
+            <li><a href="https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/index.html" target="_blank">Oded Regev’s Course Materials</a></li>
+            <li><a href="https://link.springer.com/book/10.1007/978-3-319-21936-3" target="_blank">Lattice-Based Cryptography</a> by Micciancio & Regev (Springer Briefs)</li>
+            <li><a href="https://people.csail.mit.edu/vinodv/papers/lattice-survey.pdf" target="_blank">Survey by Vaikuntanathan</a></li>
+        </ul>
+        <h3>Lecture Notes</h3>
+        <ul>
+            <li>Notes from MIT 6.875 (Lattice-based crypto)</li>
+            <li>Lecture slides from Eurocrypt Summer School (TBD)</li>
+        </ul>
+        <h3>Videos</h3>
+        <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PL8C0C4807AC84DBF4" target="_blank">Lattices in Cryptography – MSRI Video Series</a></li>
+            <li><a href="https://www.youtube.com/@RealWorldCrypto" target="_blank">Real World Crypto Conference Channel</a></li>
+        </ul>
+    </section>
+    <hr>
+</body>
+</html>
