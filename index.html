@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fall 2025: Lattice-Based Cryptography</title>
+    <title>Summer 2025: Lattice-Based Cryptography</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         body {
@@ -46,7 +46,7 @@
 </head>
 <body>
     <header>
-        <h1>Fall 2025: Lattice-Based Cryptography Seminar</h1>
+        <h1>Summer 2025: Lattice-Based Cryptography Seminar</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -78,10 +78,9 @@
     <section>
         <h2>Seminar Information</h2>
         <p><strong>Lecturer:</strong> Liu Jiaqi<br>
-        <strong>Lecture Time:</strong> Tuesday & Friday, 10:00 AM – 12:00 PM<br>
-        <strong>Location:</strong> Room 302, CIM building<br>
-        <br>
-        <strong>Textbook:</strong> "An Introduction to Mathematical Cryptography" by Hoffstein–Pipher–Silverman (supplemented by papers and lecture notes)</p>
+        <strong>Lecture Time:</strong> 18:30 - 21:30 (GTM+8h) <br>
+        <strong>Location:</strong> Online, by Feishu Meeting. Link Released in the morning.<br>
+        <strong>Textbook:</strong> <a href="https://eprint.iacr.org/2015/939.pdf" target="_blank"> A decade of lattice cryptography </a> by Christ Peikert (used as a primary reference, though the seminar will not strictly follow its structure; additional papers and lecture notes will be incorporated).</p>
     </section>
 
     <hr>
@@ -96,40 +95,24 @@
                 <th>Reading Materials</th>
             </tr>
             <tr>
-                <td></td>
+                <td>June 27</td>
                 <td>Lecture 01</td>
-                <td><a href="lecture01.html">Introduction to Lattices</a></td>
-                <td>Micciancio–Goldwasser Ch. 1–2</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Lecture 02</td>
-                <td><a href="lecture02.html">Hard Lattice Problems</a></td>
-                <td>Lecture Notes + Slides</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Lecture 03</td>
-                <td><a href="lecture03.html">Learning With Errors (LWE)</a></td>
-                <td>Regev’s Paper + Notes</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Lecture 04</td>
-                <td><a href="lecture04.html">Ring-LWE and Module-LWE</a></td>
-                <td>Lyubashevsky–Peikert–Regev 2013</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Lecture 05</td>
-                <td><a href="lecture05.html">Trapdoors and Applications</a></td>
-                <td>Micciancio–Peikert 2012</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Lecture 06</td>
-                <td><a href="lecture06.html">Advanced Constructions (IBFE, FHE, etc.)</a></td>
-                <td>Selected papers + notes</td>
+                <td><a href="lecture01.html">Lattice Trapdoors, Discrete Gaussian Sampling, Digital Signature</a></td>
+                <td>
+    <strong>Lecture Note:</strong>
+    <ul style="margin: 2px 0; padding-left: 16px;">
+        <li><a href="https://eprint.iacr.org/2007/432.pdf" target="_blank">[GPV08]</a> — original paper</li>
+    </ul>
+    <strong>Reading:</strong>
+    <ul style="margin: 2px 0; padding-left: 16px;">
+        <li>Textbook Chapters 5.4.1–5.4.2</li>
+        <li><a href="https://eprint.iacr.org/2007/432.pdf" target="_blank">[GPV08]</a> by Gentry, Peikert, and Vaikuntanathan</li>
+    </ul>
+    <strong>Supplement:</strong>
+    <ul style="margin: 2px 0; padding-left: 16px;">
+        <li><a href="https://www.youtube.com/watch?v=v4dgUPaQmDs&t=3893s" target="_blank">Video by Chris Peikert</a> <em>(no Chinese captions)</em></li>
+    </ul>
+</td>
             </tr>
         </table>
     </section>
@@ -137,7 +120,7 @@
     <section>
         <h2>Announcements</h2>
         <ul>
-            <li>First lecture: September 3, 2025</li>
+            <li>First lecture: June 27, 2025</li>
             <li>Paper review schedule will be distributed by Week 2</li>
             <li>Project proposal due: October 18, 2025</li>
             <li>Final presentation week: December 10–12, 2025</li>
@@ -151,21 +134,11 @@
         <p>Please check the list below for useful references and let me know if you have suggestions!</p>
         <li> Erratas and updates will be posted regularly.
         <h3>Books</h3>
-        <ul>
-            <li><a href="https://cims.nyu.edu/~regev/teaching/lattices_fall_2004/index.html" target="_blank">Oded Regev’s Course Materials</a></li>
-            <li><a href="https://link.springer.com/book/10.1007/978-3-319-21936-3" target="_blank">Lattice-Based Cryptography</a> by Micciancio & Regev (Springer Briefs)</li>
-            <li><a href="https://people.csail.mit.edu/vinodv/papers/lattice-survey.pdf" target="_blank">Survey by Vaikuntanathan</a></li>
-        </ul>
+        
         <h3>Lecture Notes</h3>
-        <ul>
-            <li>Notes from MIT 6.875 (Lattice-based crypto)</li>
-            <li>Lecture slides from Eurocrypt Summer School (TBD)</li>
-        </ul>
+        
         <h3>Videos</h3>
-        <ul>
-            <li><a href="https://www.youtube.com/playlist?list=PL8C0C4807AC84DBF4" target="_blank">Lattices in Cryptography – MSRI Video Series</a></li>
-            <li><a href="https://www.youtube.com/@RealWorldCrypto" target="_blank">Real World Crypto Conference Channel</a></li>
-        </ul>
+        
     </section>
     <hr>
 </body>
