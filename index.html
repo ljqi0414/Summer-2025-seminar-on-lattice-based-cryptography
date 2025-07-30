@@ -53,7 +53,6 @@
                 <li><a href="syllabus.html">Syllabus</a></li>
                 <li><a href="materials.html">Materials</a></li>
                 <li><a href="videos.html">Videos</a></li>
-                <li><a href="assignments.html">Assignments</a></li>
             </ul>
         </nav>
     </header>
@@ -63,13 +62,10 @@
         <p>Prerequisite: Linear Algebra, Abstract Algebra (including groups, rings, modules), Basic Number Theory, and basic familiarity with complexity theory and cryptography (e.g., one-way functions, public-key encryption).</p>
         <p>
             This seminar offers a rigorous introduction to lattice-based cryptography, one of the most promising directions in post-quantum cryptography.
-            Topics include worst-case to average-case reductions, the Learning With Errors (LWE) problem, ring/ideal variants, trapdoors, digital signatures, identity-based and functional encryption, as well as advanced constructions such as fully homomorphic encryption and zero-knowledge proofs.
+            Topics include lattice trapdoors, digital signatures, (hierarchical) identity-based encryption, attribute-based encryption, and functional encryption, as well as advanced constructions such as zero-knowledge proofs.
         </p>
         <p>
-            Emphasis will be placed on both theoretical foundations and practical relevance. The course will follow a mix of lecture presentations and student-led paper discussions.
-        </p>
-        <p>
-            By the end of the seminar, students should be equipped to read cutting-edge research papers and conduct independent work in lattice-based cryptography or related fields in post-quantum cryptography.
+            By the end of the seminar, everyone is expected to be equipped to read cutting-edge research papers and conduct independent work in lattice-based cryptography or related fields in post-quantum cryptography.
         </p>
     </section>
 
@@ -97,12 +93,8 @@
             <tr>
                 <td>June 27</td>
                 <td>Lecture 01</td>
-                <td><a href="lecture01.html">Lattice Trapdoors, Discrete Gaussian Sampling, Digital Signature</a></td>
+                <td>Lattice trapdoors (short bases), discrete Gaussian sampling, digital signature</a></td>
                 <td>
-    <strong>Lecture Note:</strong>
-    <ul style="margin: 2px 0; padding-left: 16px;">
-        <li><a href="https://eprint.iacr.org/2007/432.pdf" target="_blank">[GPV08]</a> — original paper</li>
-    </ul>
     <strong>Reading:</strong>
     <ul style="margin: 2px 0; padding-left: 16px;">
         <li>Textbook Chapters 5.4.1–5.4.2</li>
@@ -110,10 +102,93 @@
     </ul>
     <strong>Supplement:</strong>
     <ul style="margin: 2px 0; padding-left: 16px;">
-        <li><a href="https://www.youtube.com/watch?v=v4dgUPaQmDs&t=3893s" target="_blank">Video by Chris Peikert</a> <em>(no Chinese captions)</em></li>
+        <li> The first half part <a href="https://www.youtube.com/watch?v=v4dgUPaQmDs&t=3893s" target="_blank">Video by Chris Peikert</a> <em>(no Chinese captions)</em> (The video also covers the procedure of discrete Gaussian sampling and explains the intuition behind why the GGH scheme is not secure. These topics were not discussed in detail during the lecture.)</li>
     </ul>
 </td>
-            </tr>
+</tr>
+
+<tr>
+    <td>July 02</td>
+    <td>Lecture 02</td>
+    <td> Preimage sampleable function (PSF) from SIS, digital signature scheme</a></td>
+    <td>
+        <strong>Reading:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li>Textbook Chapters 5.4.2, 5.5.1</li>
+            <li><a href="https://eprint.iacr.org/2007/432.pdf" target="_blank">[GPV08]</a> — the PSF part and digital signature part. </li>(The "hash-and-sign" paradigm is an important way to construct digital signature schemes). 
+        </ul>
+        <strong>Supplement:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li> Chapter 13 in [BS] is helpful if you want to study the rigorous description of digital signature. </li>
+        </ul>
+    </td>
+</tr>
+
+<tr>
+    <td>July 06</td>
+    <td>Lecture 03</td>
+    <td> Identity-based encryption (IBE) </a></td>
+    <td>
+        <strong>Reading:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li>Textbook Chapter 5.5.2</li>
+            <li><a href="https://eprint.iacr.org/2007/432.pdf" target="_blank">[GPV08]</a> — the IBE part</li>(The scheme in [GPV08] also meets the anonymous property, i.e., the ciphertext also hides the identity to which it was encrypted). It is better if you have reviewed the dual cryptosystem.
+        </ul>
+        <strong>Supplement:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li> Section 15.6.1, 15.6.2 in [BS] is helpful if you want to understand the background and the rigorous description of IBE. It also includes how to a selectively secure IBE to an adaptively one. </li>
+        </ul>
+    </td>
+</tr>
+
+<tr>
+    <td>July 23</td>
+    <td>Lecture 04</td>
+    <td>Gadget Trapdoors </a></td>
+    <td>
+        <strong>Reading:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li>Textbook Chapter 5.4.3</li>
+            <li><a href="https://eprint.iacr.org/2011/501.pdf" target="_blank">[MP12]</a> on gadget trapdoors</li>
+        </ul>
+        <strong>Supplement:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li> The latter half of<a href="https://www.youtube.com/watch?v=v4dgUPaQmDs&t=7652s" target="_blank"> Video by Chris Peikert </a> (The "P" in [GPV08] and [MP12]). It is an excellent lattice-related lecture that I have personally found highly insightful, having watched it multiple times.:) </li>
+        </ul>
+    </td>
+</tr>
+        <tr>
+    <td>July 27</td>
+    <td>Lecture 05</td>
+    <td>(Hierarchical) IBE without random oracle model </a></td>
+    <td>
+        <strong>Reading:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li>Textbook Chapter 5.5.3</li>
+            <li><a href="https://eprint.iacr.org/2010/591.pdf" target="_blank">[CHKP10]</a> on (Hierarchical) IBE from LWE (This paper also proposed a scheme of "hash-and-sign'' digital signature scheme in the "standard model'' which is also secure under "adaptive" chosen-message attack!)</li>
+        </ul>
+        <strong>Supplement:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li><a href="https://eprint.iacr.org/2010/591.pdf" target="_blank">[CHKP10]</a> has many useful tools not covered in the lecture, such as Bonsai trees (a mathematical object which is developed independently of crypto), extending and randomizing a trapdoor (short basis rather than gadget trapdoors) at a cost of a small loss in trapdoor quality.  </li>
+        </ul>
+    </td>
+</tr>
+ <tr>
+    <td>July 31</td>
+    <td>Lecture 06</td>
+    <td>Trapdoor puncturing and compact (hierarchical) IBE without random oracle model </a></td>
+    <td>
+        <strong>Reading:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li>Textbook Chapter 5.5.4</li>
+            <li><a href="https://crypto.stanford.edu/~dabo/pubs/papers/latticebb.pdf" target="_blank">[ABB10]</a> on efficient (Hierarchical) IBE from LWE (This paper uses the idea of gadget trapdoor implicitly. You may notice the paper was presented ahead of the gadget paper [MP12].)</li>
+        </ul>
+        <strong>Supplement:</strong>
+        <ul style="margin: 2px 0; padding-left: 16px;">
+            <li><a href="https://www.youtube.com/watch?v=fVen9vkFWlk&t=3607s" target="_blank">Video by Shweta Agrawal</a>  (The "A" from [ABB10]). You may find this video useful if you would like to run through the "trapdoor". </li>
+        </ul>
+    </td>
+</tr>
         </table>
     </section>
 
@@ -121,9 +196,6 @@
         <h2>Announcements</h2>
         <ul>
             <li>First lecture: June 27, 2025</li>
-            <li>Paper review schedule will be distributed by Week 2</li>
-            <li>Project proposal due: October 18, 2025</li>
-            <li>Final presentation week: December 10–12, 2025</li>
         </ul>
     </section>
 
@@ -132,8 +204,9 @@
     <section>
         <h2>Additional Materials</h2>
         <p>Please check the list below for useful references and let me know if you have suggestions!</p>
-        <li> Erratas and updates will be posted regularly.
+        <li> Erratas and updates will be posted regularly.</li>
         <h3>Books</h3>
+        <li> [BS] <a href="https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf" target="_blank">A Graduate Course in Applied Cryptography</a> by Dan Boneh and Victor Shoup. My favourite crypto book.</li>
         
         <h3>Lecture Notes</h3>
         
